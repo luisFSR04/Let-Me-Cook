@@ -22,7 +22,8 @@ button {
 /* REGLAS SOLO PARA MÓVIL */
 @media (max-width: 600px) {
     #Logo {
-        margin-left: 0;      /* Quitamos el margen lateral */
+
+        margin-left: 10vw;      /* Quitamos el margen lateral */
         margin-top: 20px;
         text-align: center;  /* Centramos el contenido */
         display: block;      /* Asegura que ocupe el ancho para centrarse */
