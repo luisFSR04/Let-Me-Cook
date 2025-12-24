@@ -35,3 +35,10 @@ button {
 button:hover {
     transform: scale(1.05); /* El botÃ³n crece un poquito al pasar el ratÃ³n */
 }
+/* REGLAS SOLO PARA MÃ“VIL */
+@media (max-width: 600px) {
+    /* Ajustamos el botón para que cuadre con la pantalla del móvil */
+    button{
+        justify-content: center;
+    }
+}
