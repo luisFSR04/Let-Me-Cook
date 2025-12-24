@@ -1,0 +1,16 @@
+body {
+    background: #ffee93;
+}
+
+button {
+    border-radius: 5px;
+    size: 100px;
+    block-size: 10vh;
+    background: none;
+    border-style: dotted;
+    cursor: pointer;
+}
+
+#Logo {
+    margin-left: 65.5vh;
+}
