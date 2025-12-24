@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box; /* Fundamental: hace que los bordes no aumenten el tamaño de las cajas */
+    margin: 0;
+    padding: 0;
+}
 body {
     background: #ffee93;
     margin: 0;

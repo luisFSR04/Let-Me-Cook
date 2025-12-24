@@ -1,32 +1,37 @@
+/* 1. Reset básico */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
 body {
     background: #ffee93;
-    margin: 0; /* Importante quitar márgenes por defecto */
-}
-
-button {
-    border-radius: 5px;
-    /* "size" no existe, usamos width/height */
-    width: 100px; 
-    height: 10vh; /* O usa px si prefieres un tamaño fijo */
-    background: none;
-    border-style: dotted;
-    cursor: pointer;
+    /* 2. Flexbox para centrar todo perfecto */
+    display: flex;
+    flex-direction: column; /* Elementos en columna vertical */
+    align-items: center;    /* Centrado horizontal */
+    justify-content: center; /* Centrado vertical */
+    min-height: 100vh;       /* Asegura que el cuerpo ocupe toda la pantalla */
+    padding: 20px;          /* Un poco de aire en los bordes para móviles muy pequeños */
 }
 
 #Logo {
-    /* EN ORDENADOR: */
-    margin-left: 54.5vw; /* Usamos vw (ancho) no vh (alto) para centrar horizontalmente */
-    transform: translateX(-50%); /* Truco para centrarlo perfecto */
+    /* 3. Control de imagen */
+    width: 500px;      /* Tamaño ideal en PC */
+    max-width: 100%;   /* En móvil se encogerá automáticamente */
+    margin-bottom: 2rem; /* Espacio debajo del logo */
 }
 
-/* REGLAS SOLO PARA MÓVIL */
-@media (max-width: 600px) {
-    #Logo {
+button {
+    background: transparent;
+    border: 2px dotted black; /* Borde punteado visible */
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    
+    /* 4. Tamaño inteligente con padding */
+    padding: 15px 40px; /* 15px arriba/abajo, 40px lados */
+    font-size: 1.2rem;  /* Tamaño de letra legible */
+    transition: transform 0.2s; /* Efecto suave al pasar el ratón (opcional) */
+}
 
-        margin-left: 15vw;      /* Quitamos el margen lateral */
-        margin-top: 20px;
-        text-align: center;  /* Centramos el contenido */
-        display: block;      /* Asegura que ocupe el ancho para centrarse */
-        width: 100%;
-    }
+button:hover {
+    transform: scale(1.05); /* El botón crece un poquito al pasar el ratón */
 }
