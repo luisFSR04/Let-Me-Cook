@@ -14,8 +14,8 @@ body {
 
 #Logo {
     /* 3. Control de imagen */
-    width: 500px;      /* Tamaño ideal en PC */
-    max-width: 100%;   /* En móvil se encogerá automáticamente */
+    width: 37vw;      /* Tamaño ideal en PC */
+    max-width: 100vw;   /* En móvil se encogerá automáticamente */
     margin-bottom: 2rem; /* Espacio debajo del logo */
 }
 
