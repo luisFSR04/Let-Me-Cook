@@ -15,7 +15,7 @@ button {
 
 #Logo {
     /* EN ORDENADOR: */
-    margin-left: 50vw; /* Usamos vw (ancho) no vh (alto) para centrar horizontalmente */
+    margin-left: 75vw; /* Usamos vw (ancho) no vh (alto) para centrar horizontalmente */
     transform: translateX(-50%); /* Truco para centrarlo perfecto */
 }
 
