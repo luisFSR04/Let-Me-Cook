@@ -1,16 +1,31 @@
 body {
     background: #ffee93;
+    margin: 0; /* Importante quitar márgenes por defecto */
 }
 
 button {
     border-radius: 5px;
-    size: 100px;
-    block-size: 10vh;
+    /* "size" no existe, usamos width/height */
+    width: 100px; 
+    height: 10vh; /* O usa px si prefieres un tamaño fijo */
     background: none;
     border-style: dotted;
     cursor: pointer;
 }
 
 #Logo {
-    margin-left: 65.5vh;
+    /* EN ORDENADOR: */
+    margin-left: 50vw; /* Usamos vw (ancho) no vh (alto) para centrar horizontalmente */
+    transform: translateX(-50%); /* Truco para centrarlo perfecto */
+}
+
+/* REGLAS SOLO PARA MÓVIL */
+@media (max-width: 600px) {
+    #Logo {
+        margin-left: 0;      /* Quitamos el margen lateral */
+        margin-top: 20px;
+        text-align: center;  /* Centramos el contenido */
+        display: block;      /* Asegura que ocupe el ancho para centrarse */
+        width: 100%;
+    }
 }

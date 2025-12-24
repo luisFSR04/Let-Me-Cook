@@ -1,5 +1,6 @@
 body {
     background: #ffee93;
+    margin: 0;
 }
 
 #Barra_Lateral {
@@ -7,7 +8,7 @@ body {
     background: #abc4ff;
     border-top: black solid;
     border-right: black solid;
-    width: 17vh;
+    width: 200px; /* Mejor usar px o % que vh para anchos */
     height: 95vh;
 }
 
@@ -24,6 +25,18 @@ button {
 }
 
 table {
-    display: flexbox;
+    display: flex; /* Corregido: flexbox no existe */
+    /* EN ORDENADOR: */
     margin-left: 45%;
+}
+
+/* REGLAS SOLO PARA MÓVIL */
+@media (max-width: 600px) {
+    /* Ajustamos la barra lateral para que no ocupe tanto o se ponga arriba */
+    #Barra_Lateral {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: black solid;
+    }
 }
