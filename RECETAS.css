@@ -1,0 +1,29 @@
+body {
+    background: #ffee93;
+}
+
+#Barra_Lateral {
+    text-align: center;
+    background: #abc4ff;
+    border-top: black solid;
+    border-right: black solid;
+    width: 17vh;
+    height: 95vh;
+}
+
+#Ficha {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 5%;
+    font-style: italic;
+    font-weight: bold;
+}
+
+table {
+    display: flexbox;
+    margin-left: 45%;
+}
